@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body{
+            margin: 0;
+            font-family: "Open Sans", sans-serif;
+        }
+        .appli{
+            background-color: #FFDFE5;
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .appli p{
+            font-size: 18px;
+        }
+        .button{
+            background-color: red;
+            border: none;
+            padding: 13px;
+            border-radius: 10px;
+            color: white;
+
+        }
+        #main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc; 
+            padding: 10px;
+            background-color: white;
+        }
+
+        #main > div {
+            display: flex;
+            justify-content: space-between;
+            gap: 35px;
+            font-weight: 500;
+            margin: 0 10px; 
+        }
+        #main > div > div:hover {
+        color: red; 
+        background-color: #FFFAFB;
+        cursor: pointer; 
+        }
+        #refer{
+            background-color: rgb(207, 233, 238);
+            border: none;
+            font-size: 14px;
+            color: rgb(110, 113, 204);
+            padding: 10px 10px 15px 10px;
+            border-radius: 10px;
+        }
+        #sign{
+            border: 1px solid red;
+            background-color: white;
+            color: red;
+            font-size: 14px;
+            border-radius: 10px;
+            padding: 16px;
+        }
+        .proof{
+            margin-top: 100px;
+            margin-left: 50px;
+            margin-bottom: 100px;
+        }
+        .proof>iframe:nth-child(1){
+            float: right;
+            margin-right: 70px;
+            border-radius: 15px;
+        }
+        .proof>p:nth-child(2){
+            font-size: 50px;
+            font-weight: bold;
+            color: #6E71CC;
+        }
+        .proof>p:nth-child(3){
+            margin-top: -40px;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+        }
+        .proof>button:nth-child(4){
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .impact{
+            background-color: #3470E4;
+            height: 40vh;
+            color: white;
+        }
+        .impact>div:nth-of-type(1){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .how{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .how~p{
+            margin-top: -30px;
+        }
+        .impact>div:nth-of-type(2){
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+        .impact>div:nth-of-type(3){
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="appli">
+        <p>Admissions open for our 8th Apr’24 batch. Limited seats reserved for 12th Grads.</p>
+        <button class="button">APPLY NOW</button>
+    </div>
+    <div id="main">
+        <div>
+            <img src="images.png" alt="" width="100px">
+        </div>
+        <div>
+            <div>Courses </div>
+            <div>Fees</div>
+            <div>Events</div>
+            <div>Learn</div>
+            <div>Success Stories</div>
+            <div>Hire From Us</div>
+        </div>
+        <div>
+            <button id="refer">REFER & EARN<span class="material-symbols-outlined" style="margin-left: 5px;">
+                volunteer_activism
+                </span></button>
+            <button class="button">SIGN UP</button>
+        </div>
+    </div>
+    <div class="proof">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0867JeIfyLY?si=R9tBHjjPg5No8tWT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>Proof that dreams do <br> come true</p>
+        <p>A testament to what’s possible</p>
+        <button class="button">APPLY NOW</button>
+    </div>
+    <div class="impact">
+        <div>
+            <p class="how">How is Masai Creating an Impact?</p>
+            <p>4000+ students placed across 1000+ companies</p>
+        </div>
+        <div>
+            <div>4000+</div>
+            <div>6.9 LPA</div>
+            <div>6000+</div>
+        </div>
+        <div>
+            <div>Hiring Partners</div>
+            <div>Average CTC</div>
+            <div>Currently Enrolled Students</div>
+        </div>
+    </div>
+</body>
+</html>
